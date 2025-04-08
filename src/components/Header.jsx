@@ -7,31 +7,32 @@ const menuList = ["About", "Find Plants", "Order Tracking", "Contact"];
 const Header = () => {
   return (
     <header>
-      <div className="flex justify-end p-8">
-        <CircleUserRound className="mr-1" />
-        Sign-in
-      </div>
-
-      <div className="flex justify-center">
-        <img src={logo} alt="logo" className="w-80 h-auto" />
-      </div>
-
-      <div className="relative flex justify-center mt-10">
-        <nav className="absolute left-1/2 transform -translate-x-1/2">
-          <ul className="flex gap-x-5 text-xl list-none cursor-pointer">
-            {menuList.map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
-        </nav>
-
-        <form className="flex items-center ml-auto pr-10" role="search">
-          <Search className="w-6 h-6 text-green-700" />
+      <div className="flex justify-end">
+        <form className="flex items-center" role="search">
+          <Search className="w-6 h-6 sm:w-8 sm:h-8 text-green-700" />
           <input
             className="border-b-2 border-green-700 w-30 h-10 pl-2 focus:outline-none"
             placeholder="Search plants"
           />
         </form>
+        <div className="flex items-center p-8 text-base sm:text-2xl text-gray-700">
+          <CircleUserRound className="mr-1 w-8 h-8" />
+          Sign-in
+        </div>
+      </div>
+
+      <div className="flex justify-center">
+        <img src={logo} alt="logo" className="w-50 h-auto sm:w-80" />
+      </div>
+
+      <div className="flex justify-center mt-10">
+        <nav>
+          <ul className="flex gap-x-5 text-base sm:text-2xl list-none cursor-pointer">
+            {menuList.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        </nav>
       </div>
     </header>
   );
