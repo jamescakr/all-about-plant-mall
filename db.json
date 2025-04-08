@@ -2,203 +2,93 @@
   "products": [
     {
       "id": 0,
-      "img": "https://www.istockphoto.com/photos/snake-plant",
+      "img": "https://asset.bloomnation.com/c_limit%2Cd_vendor%3Aglobal%3Acatalog%3Aproduct%3Aimage.png%2Cf_auto%2Cfl_preserve_transparency%2Cq_auto/v1605832238/vendor/5422/catalog/product/2/0/20201119042900_file_5fb69d4c6746d_5fb69da1328aa.jpg",
       "title": "Snake Plant",
       "price": "$16",
       "difficulty": "Hard",
-      "light": "Partial Shade",
+      "light": "🌥️ Partial Shade",
       "watering": "Weekly",
       "suitability": "Indoor only"
     },
     {
       "id": 1,
-      "img": "https://stock.adobe.com/search/images?k=spider+plant",
+      "img": "https://www.almanac.com/sites/default/files/image_nodes/spider-plant_t50-ss.jpg",
       "title": "Spider Plant",
       "price": "$23",
       "difficulty": "Hard",
-      "light": "Full Sun",
+      "light": "☀️ Full Sun",
       "watering": "Every 3 days",
       "suitability": "Indoor only"
     },
     {
       "id": 2,
-      "img": "https://stock.adobe.com/search?k=%22peace+lily%22",
+      "img": "https://res.cloudinary.com/bloomnation/c_pad%2Cd_vendor%3Aglobal%3Acatalog%3Aproduct%3Aimage.png%2Cf_auto%2Cfl_preserve_transparency%2Cq_auto/v1581043102/vendor/2932/catalog/product/2/0/20181128081621_file_5bfef795f08dd.jpg",
       "title": "Peace Lily",
       "price": "$13",
       "difficulty": "Easy",
-      "light": "Full Sun",
+      "light": "☀️ Full Sun",
       "watering": "Weekly",
       "suitability": "Indoor/Outdoor"
     },
     {
       "id": 3,
-      "img": "https://pixabay.com/images/search/aloe%20vera/",
+      "img": "https://greenripegarden.com/wp-content/uploads/2020/04/Aloe-Vera-Plant-2048x1365.jpg",
       "title": "Aloe Vera",
       "price": "$28",
       "difficulty": "Easy",
-      "light": "Full Sun",
+      "light": "☀️ Full Sun",
       "watering": "Every 3 days",
       "suitability": "Indoor only"
     },
     {
       "id": 4,
-      "img": "https://www.istockphoto.com/photos/fiddle-leaf-fig",
+      "img": "https://terragreenhouses.com/wp-content/uploads/2020/08/Fiddle-Leaf-Fig-10-Inch-Grower-Pot-scaled.jpg",
       "title": "Fiddle Leaf Fig",
       "price": "$17",
       "difficulty": "Medium",
-      "light": "Full Sun",
+      "light": "☀️ Full Sun",
       "watering": "Every 3 days",
       "suitability": "Indoor only"
     },
     {
       "id": 5,
-      "img": "https://stock.adobe.com/search?k=%22rubber+plant%22",
+      "img": "https://flatwithplants.com/images/uploads/plants/_largeImage/133/rubber-plantJPG.jpg",
       "title": "Rubber Plant",
       "price": "$17",
       "difficulty": "Easy",
-      "light": "Partial Shade",
+      "light": "🌥️ Partial Shade",
       "watering": "Every 3 days",
       "suitability": "Indoor/Outdoor"
     },
     {
       "id": 6,
-      "img": "https://www.istockphoto.com/photos/monstera",
+      "img": "https://i.pinimg.com/originals/02/44/09/0244091b32b048107fb95e98793eb989.jpg",
       "title": "Monstera",
       "price": "$11",
       "difficulty": "Easy",
-      "light": "Partial Shade",
+      "light": "🌥️ Partial Shade",
       "watering": "Every 3 days",
       "suitability": "Indoor only"
     },
     {
       "id": 7,
-      "img": "https://www.istockphoto.com/photos/zz-plant",
+      "img": "https://redsquareflowers.com/wp-content/uploads/2021/06/zz-plant-madison-wi-scaled-e1687315036116.jpg",
       "title": "ZZ Plant",
       "price": "$10",
       "difficulty": "Medium",
-      "light": "Partial Shade",
+      "light": "🌥️ Partial Shade",
       "watering": "Weekly",
       "suitability": "Indoor only"
     },
     {
       "id": 8,
-      "img": "https://www.istockphoto.com/photos/golden-pothos",
+      "img": "https://natalielinda.com/wp-content/uploads/2018/11/Cream-pothos.jpg",
       "title": "Pothos",
       "price": "$25",
       "difficulty": "Medium",
-      "light": "Partial Shade",
+      "light": "🌥️ Partial Shade",
       "watering": "Every 3 days",
       "suitability": "Indoor only"
-    },
-    {
-      "id": 9,
-      "img": "https://www.istockphoto.com/photos/dracaena",
-      "title": "Dracaena",
-      "price": "$25",
-      "difficulty": "Medium",
-      "light": "Full Sun",
-      "watering": "Every 3 days",
-      "suitability": "Indoor only"
-    },
-    {
-      "id": 10,
-      "img": "https://www.istockphoto.com/photos/boston-fern",
-      "title": "Boston Fern",
-      "price": "$16",
-      "difficulty": "Easy",
-      "light": "Full Sun",
-      "watering": "Weekly",
-      "suitability": "Indoor/Outdoor"
-    },
-    {
-      "id": 11,
-      "img": "https://www.istockphoto.com/photos/jade-plant",
-      "title": "Jade Plant",
-      "price": "$13",
-      "difficulty": "Easy",
-      "light": "Full Sun",
-      "watering": "Every 3 days",
-      "suitability": "Indoor only"
-    },
-    {
-      "id": 12,
-      "img": "https://www.istockphoto.com/photos/chinese-evergreen",
-      "title": "Chinese Evergreen",
-      "price": "$28",
-      "difficulty": "Hard",
-      "light": "Full Sun",
-      "watering": "Weekly",
-      "suitability": "Indoor/Outdoor"
-    },
-    {
-      "id": 13,
-      "img": "https://www.istockphoto.com/photos/calathea",
-      "title": "Calathea",
-      "price": "$28",
-      "difficulty": "Hard",
-      "light": "Full Sun",
-      "watering": "Weekly",
-      "suitability": "Indoor only"
-    },
-    {
-      "id": 14,
-      "img": "https://www.istockphoto.com/photos/croton",
-      "title": "Croton",
-      "price": "$10",
-      "difficulty": "Hard",
-      "light": "Full Sun",
-      "watering": "Weekly",
-      "suitability": "Indoor/Outdoor"
-    },
-    {
-      "id": 15,
-      "img": "https://www.istockphoto.com/photos/areca-palm",
-      "title": "Areca Palm",
-      "price": "$30",
-      "difficulty": "Medium",
-      "light": "Partial Shade",
-      "watering": "Every 3 days",
-      "suitability": "Indoor/Outdoor"
-    },
-    {
-      "id": 16,
-      "img": "https://www.istockphoto.com/photos/parlor-palm",
-      "title": "Parlor Palm",
-      "price": "$18",
-      "difficulty": "Easy",
-      "light": "Full Sun",
-      "watering": "Weekly",
-      "suitability": "Indoor/Outdoor"
-    },
-    {
-      "id": 17,
-      "img": "https://www.istockphoto.com/photos/aglaonema",
-      "title": "Aglaonema",
-      "price": "$23",
-      "difficulty": "Medium",
-      "light": "Partial Shade",
-      "watering": "Weekly",
-      "suitability": "Indoor only"
-    },
-    {
-      "id": 18,
-      "img": "https://www.istockphoto.com/photos/dieffenbachia",
-      "title": "Dieffenbachia",
-      "price": "$13",
-      "difficulty": "Medium",
-      "light": "Full Sun",
-      "watering": "Every 3 days",
-      "suitability": "Indoor/Outdoor"
-    },
-    {
-      "id": 19,
-      "img": "https://www.istockphoto.com/photos/bird-of-paradise",
-      "title": "Bird of Paradise",
-      "price": "$25",
-      "difficulty": "Easy",
-      "light": "Full Sun",
-      "watering": "Weekly",
-      "suitability": "Indoor/Outdoor"
     }
   ]
 }
