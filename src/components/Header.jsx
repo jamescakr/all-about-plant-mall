@@ -15,8 +15,8 @@ const Header = () => {
             placeholder="Search plants"
           />
         </form>
-        <div className="flex items-center p-8 text-base sm:text-2xl text-gray-700">
-          <CircleUserRound className="mr-1 w-8 h-8" />
+        <div className="flex items-center p-8 text-base sm:text-xl text-gray-700">
+          <CircleUserRound className="mr-1 w-5 h-5 sm:w-7 sm:h-7" />
           Sign-in
         </div>
       </div>
