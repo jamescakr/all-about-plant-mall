@@ -16,7 +16,9 @@ const App = () => {
 
   return (
     <div>
-      {location.pathname !== "/login" && <Header />}
+      {location.pathname !== "/login" && (
+        <Header authenticate={authenticate} setAuthenticate={setAuthenticate} />
+      )}
       <Routes>
         <Route path="/" element={<ProductAll />} />
         <Route path="/login" element={<Login setAuthenticate={setAuthenticate} />} />

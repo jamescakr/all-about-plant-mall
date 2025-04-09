@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 const menuList = ["About", "Find Plants", "Order Tracking", "Contact"];
 
-const Header = () => {
+const Header = ({ authenticate, setAuthenticate }) => {
   const navigate = useNavigate();
 
   const goToLogin = () => {
@@ -28,10 +28,17 @@ const Header = () => {
         </form>
         <div
           className="flex items-center p-8 text-base sm:text-xl text-gray-700 cursor-pointer"
-          onClick={goToLogin}
+          onClick={() => {
+            if (authenticate) {
+              setAuthenticate(false);
+              navigate("/");
+            } else {
+              goToLogin();
+            }
+          }}
         >
           <CircleUserRound className="mr-1 w-5 h-5 sm:w-7 sm:h-7" />
-          Sign-in
+          {authenticate ? <div>Sign-out</div> : <div>Sign-in</div>}
         </div>
       </div>
 
