@@ -1,16 +1,29 @@
 import React from "react";
-// import googleIcon from "../assets/googleIcon.png";
 import googleLogo from "../assets/googleLogo.svg";
-import loginImage from "../assets/loginImage.png";
 import loginImage2 from "../assets/loginImage2.jpg";
+import logo from "../assets/logo.png";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+  const navigate = useNavigate();
+  const goToMain = () => {
+    navigate("/");
+  };
+
   return (
     <div>
       <div className="grid grid-cols-1 lg:grid-cols-2 ">
         {/* sign in */}
         <div className="order-2 lg:order-1 lg:col-span-1 flex flex-col justify-center items-center h-screen ">
           <div>
+            <div className="flex justify-center mb-10">
+              <img
+                src={logo}
+                className="w-[50%] h-auto cursor-pointer"
+                onClick={goToMain}
+              />
+            </div>
+
             <div className="text-left text-2xl lg:text-4xl font-bold mb-2">
               Sign up to explore more!
             </div>
@@ -31,9 +44,15 @@ const Login = () => {
             </div>
 
             <div className="text-base mb-1">Email address</div>
-            <input className="border border-gray-300 w-80 lg:w-100 h-12 rounded-sm mb-3" />
+            <input
+              placeholder="Enter your email"
+              className="border border-gray-300 w-80 lg:w-100 h-12 rounded-sm mb-3 pl-2"
+            />
             <div className="text-base mb-1">Password</div>
-            <input className="border border-gray-300 w-80 lg:w-100 h-12 rounded-sm mb-3" />
+            <input
+              placeholder="Enter your password"
+              className="border border-gray-300 w-80 lg:w-100 h-12 rounded-sm mb-3 pl-2"
+            />
 
             <div className="flex justify-between items-center mb-10 w-80 lg:w-100">
               <div className="flex items-center">
