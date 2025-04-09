@@ -1,12 +1,17 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const ProductCard = ({ productList }) => {
+  const navigate = useNavigate();
+  const goInDetail = () => {
+    navigate(`/product/${productList.id}`);
+  };
   return (
     <div>
       <div className="container mx-auto px-10">
         <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-20 sm:mt-10 justify-items-center">
           {productList.map((item, index) => (
-            <div key={index} className="text-xl">
+            <div key={index} className="text-xl" onClick={goInDetail}>
               <img
                 src={item?.img}
                 alt={item?.title}

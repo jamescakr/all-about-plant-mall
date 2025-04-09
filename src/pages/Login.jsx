@@ -4,9 +4,15 @@ import loginImage2 from "../assets/loginImage2.jpg";
 import logo from "../assets/logo.png";
 import { useNavigate } from "react-router-dom";
 
-const Login = () => {
+const Login = ({ setAuthenticate }) => {
   const navigate = useNavigate();
   const goToMain = () => {
+    navigate("/");
+  };
+
+  const userSignin = (event) => {
+    event.preventDefault();
+    setAuthenticate(true);
     navigate("/");
   };
 
@@ -14,7 +20,10 @@ const Login = () => {
     <div>
       <div className="grid grid-cols-1 lg:grid-cols-2 ">
         {/* sign in */}
-        <div className="order-2 lg:order-1 lg:col-span-1 flex flex-col justify-center items-center h-screen ">
+        <form
+          onSubmit={(event) => userSignin(event)}
+          className="order-2 lg:order-1 lg:col-span-1 flex flex-col justify-center items-center h-screen "
+        >
           <div>
             <div className="flex justify-center mb-10">
               <img
@@ -31,7 +40,10 @@ const Login = () => {
               Please enter your detail
             </div>
 
-            <button className="flex justify-center items-center border border-gray-300 rounded-sm w-80 lg:w-100 h-14 gap-x-3 cursor-pointer mb-3">
+            <button
+              type="button"
+              className="flex justify-center items-center border border-gray-300 rounded-sm w-80 lg:w-100 h-14 gap-x-3 cursor-pointer mb-3"
+            >
               <img src={googleLogo} className="w-10 h-10 border-none shadow-none" />
               <div>Sign in with Google</div>
             </button>
@@ -45,11 +57,15 @@ const Login = () => {
 
             <div className="text-base mb-1">Email address</div>
             <input
+              name="email"
+              type="email"
               placeholder="Enter your email"
               className="border border-gray-300 w-80 lg:w-100 h-12 rounded-sm mb-3 pl-2"
             />
             <div className="text-base mb-1">Password</div>
             <input
+              name="password"
+              type="password"
               placeholder="Enter your password"
               className="border border-gray-300 w-80 lg:w-100 h-12 rounded-sm mb-3 pl-2"
             />
@@ -72,7 +88,10 @@ const Login = () => {
                 Forgot password
               </div>
             </div>
-            <button className="bg-black text-white text-center w-80 lg:w-100 h-12 rounded-sm mb-3 cursor-pointer">
+            <button
+              type="submit"
+              className="bg-black text-white text-center w-80 lg:w-100 h-12 rounded-sm mb-3 cursor-pointer"
+            >
               Sign in
             </button>
             <div className="flex justify-center text-sm lg:text-base">
@@ -80,7 +99,7 @@ const Login = () => {
               <div className="text-blue-500 underline cursor-pointer">Sign up</div>
             </div>
           </div>
-        </div>
+        </form>
 
         {/* image */}
         <div className="relative order-1 lg:order-2 h-screen lg:col-span-1 flex items-center justify-center ">
