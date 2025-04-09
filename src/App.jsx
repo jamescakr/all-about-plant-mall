@@ -8,7 +8,7 @@ import Header from "./components/Header";
 const App = () => {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <Routes>
         <Route path="/" element={<ProductAll />} />
         <Route path="/login" element={<Login />} />

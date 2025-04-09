@@ -12,6 +12,10 @@ const Header = () => {
     navigate("/login");
   };
 
+  const goToMain = () => {
+    navigate("/");
+  };
+
   return (
     <header>
       <div className="flex justify-end">
@@ -32,7 +36,12 @@ const Header = () => {
       </div>
 
       <div className="flex justify-center">
-        <img src={logo} alt="logo" className="w-50 h-auto sm:w-80" />
+        <img
+          src={logo}
+          alt="logo"
+          onClick={goToMain}
+          className="w-50 h-auto sm:w-80"
+        />
       </div>
 
       <div className="flex justify-center mt-10">
