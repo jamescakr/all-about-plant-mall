@@ -1,10 +1,17 @@
 import React from "react";
 import logo from "../assets/logo.png";
 import { Search, CircleUserRound } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const menuList = ["About", "Find Plants", "Order Tracking", "Contact"];
 
 const Header = () => {
+  const navigate = useNavigate();
+
+  const goToLogin = () => {
+    navigate("/login");
+  };
+
   return (
     <header>
       <div className="flex justify-end">
@@ -15,7 +22,10 @@ const Header = () => {
             placeholder="Search plants"
           />
         </form>
-        <div className="flex items-center p-8 text-base sm:text-xl text-gray-700">
+        <div
+          className="flex items-center p-8 text-base sm:text-xl text-gray-700 cursor-pointer"
+          onClick={goToLogin}
+        >
           <CircleUserRound className="mr-1 w-5 h-5 sm:w-7 sm:h-7" />
           Sign-in
         </div>

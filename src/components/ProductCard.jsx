@@ -8,22 +8,22 @@ const ProductCard = ({ productList }) => {
           {productList.map((item, index) => (
             <div key={index} className="text-xl">
               <img
-                src={item.img}
-                alt={item.title}
-                className="w-90 sm:w-[250px] h-90 sm:h-70 rounded-lg mb-2"
+                src={item?.img}
+                alt={item?.title}
+                className="w-90 sm:w-[250px] h-90 sm:h-70 rounded-lg mb-2 origin-bottom hover:scale-110 transition duration-200 cursor-pointer"
               />
               <div className="flex justify-between items-center mb-2">
                 <div className="text-2xl font-semibold ml-2 text-green-800">
-                  {item.title}
+                  {item?.title}
                 </div>
                 <div className="bg-green-400 rounded-md w-auto p-1">
-                  {item.price}
+                  {item?.price}
                 </div>
               </div>
 
-              <div className="ml-2">{item.light}</div>
-              <div className="ml-2">💧 {item.watering}</div>
-              <div className="ml-2">🪴 {item.suitability}</div>
+              <div className="ml-2">{item?.light}</div>
+              <div className="ml-2">💧 {item?.watering}</div>
+              <div className="ml-2">🪴 {item?.suitability}</div>
             </div>
           ))}
         </div>
