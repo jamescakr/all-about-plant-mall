@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ProductAll from "./pages/ProductAll";
-import Login from "./pages/Login";
+import Signin from "./pages/Signin";
 import ProductDetail from "./pages/ProductDetail";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Header from "./components/Header";
@@ -16,14 +16,17 @@ const App = () => {
 
   return (
     <div>
-      {location.pathname !== "/login" && (
+      {location.pathname !== "/signin" && (
         <Header authenticate={authenticate} setAuthenticate={setAuthenticate} />
       )}
       <Routes>
         <Route path="/" element={<ProductAll />} />
-        <Route path="/login" element={<Login setAuthenticate={setAuthenticate} />} />
         <Route
-          path="/product/:id"
+          path="/signin"
+          element={<Signin setAuthenticate={setAuthenticate} />}
+        />
+        <Route
+          path="/products/:id"
           element={<PrivateRoute authenticate={authenticate} />}
         />
       </Routes>

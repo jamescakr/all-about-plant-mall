@@ -1,10 +1,10 @@
 import React from "react";
 import googleLogo from "../assets/googleLogo.svg";
-import loginImage2 from "../assets/loginImage2.jpg";
+import signinImage2 from "../assets/signinImage2.jpg";
 import logo from "../assets/logo.png";
 import { useNavigate } from "react-router-dom";
 
-const Login = ({ setAuthenticate }) => {
+const Signin = ({ setAuthenticate }) => {
   const navigate = useNavigate();
   const goToMain = () => {
     navigate("/");
@@ -29,7 +29,7 @@ const Login = ({ setAuthenticate }) => {
               <img
                 src={logo}
                 className="w-[50%] h-auto cursor-pointer"
-                onClick={goToMain}
+                onClick={goToMain()}
               />
             </div>
 
@@ -104,7 +104,7 @@ const Login = ({ setAuthenticate }) => {
         {/* image */}
         <div className="relative order-1 lg:order-2 h-screen lg:col-span-1 flex items-center justify-center ">
           <img
-            src={loginImage2}
+            src={signinImage2}
             className="rounded-sm md:w-[80%] md:h-auto lg:w-[100%] lg:h-auto"
           />
           <div className="absolute z-30 text-white ">
@@ -122,4 +122,4 @@ const Login = ({ setAuthenticate }) => {
   );
 };
 
-export default Login;
+export default Signin;

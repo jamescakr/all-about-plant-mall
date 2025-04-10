@@ -8,8 +8,8 @@ const menuList = ["About", "Find Plants", "Order Tracking", "Contact"];
 const Header = ({ authenticate, setAuthenticate }) => {
   const navigate = useNavigate();
 
-  const goToLogin = () => {
-    navigate("/login");
+  const goToSignin = () => {
+    navigate("/signin");
   };
 
   const goToMain = () => {
@@ -33,7 +33,7 @@ const Header = ({ authenticate, setAuthenticate }) => {
               setAuthenticate(false);
               navigate("/");
             } else {
-              goToLogin();
+              goToSignin();
             }
           }}
         >

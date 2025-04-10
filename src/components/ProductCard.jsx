@@ -3,15 +3,15 @@ import { useNavigate } from "react-router-dom";
 
 const ProductCard = ({ productList }) => {
   const navigate = useNavigate();
-  const goInDetail = () => {
-    navigate(`/product/${productList.id}`);
+  const goInDetail = (id) => {
+    navigate(`/products/${id}`);
   };
   return (
     <div>
       <div className="container mx-auto px-10">
         <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-20 sm:mt-10 justify-items-center">
           {productList.map((item, index) => (
-            <div key={index} className="text-xl" onClick={goInDetail}>
+            <div key={index} className="text-xl" onClick={() => goInDetail(item.id)}>
               <img
                 src={item?.img}
                 alt={item?.title}

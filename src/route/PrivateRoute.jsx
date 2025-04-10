@@ -3,7 +3,7 @@ import ProductDetail from "../pages/ProductDetail";
 import { Navigate } from "react-router-dom";
 
 const PrivateRoute = ({ authenticate }) => {
-  return authenticate ? <ProductDetail /> : <Navigate to="/login" />;
+  return authenticate ? <ProductDetail /> : <Navigate to="/signin" />;
 };
 
 export default PrivateRoute;
