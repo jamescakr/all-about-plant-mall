@@ -52,13 +52,8 @@ const Header = ({ authenticate, setAuthenticate }) => {
       </div>
 
       <div className="flex">
-        <div className="flex justify-start lg:justify-center ml-20">
-          <img
-            src={logo}
-            alt="logo"
-            onClick={goToMain}
-            className="w-50 h-25 mt-5 ml-15"
-          />
+        <div className="flex w-full lg:w-auto justify-center lg:justify-start ml-0 lg:ml-20">
+          <img src={logo} alt="logo" onClick={goToMain} className="w-50 h-25 mt-5" />
         </div>
 
         <div className="hidden flex-1 lg:flex justify-center items-center mr-20">
