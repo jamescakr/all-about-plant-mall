@@ -33,21 +33,20 @@ const ProductDetail = () => {
 
   return (
     <div>
-      <div className="grid grid-cols-1 lg:grid-cols-5 lg:mt-20 px-2 md:px-20 lg:px-30 h-auto">
-        {}
+      <div className="grid grid-cols-1 lg:grid-cols-5 lg:mt-20 px-2 md:px-20 lg:px-30 h-auto mt-20">
         <div className="lg:col-span-2">
           <img
             src={productDetail?.img}
             alt={productDetail?.title}
-            className="rounded-md"
+            className="rounded-md lg:h-150"
           />
         </div>
         <div className="lg:col-span-3 ml-5 mr-3">
           <div className="text-4xl font-semibold pt-5">{productDetail?.title}</div>
           <div className="flex justify-between items-center mt-2">
-            <div className="text-2xl">{productDetail?.price}</div>
+            <div className="text-2xl lg:text-3xl">{productDetail?.price}</div>
             {/* 태그 3가지 */}
-            <div className="flex gap-x-1 text-sm">
+            <div className="flex gap-x-1 text-sm md:text-base xl:text-lg">
               <div className="bg-emerald-700 text-white rounded-full w-auto p-1 px-3">
                 🪴 {productDetail?.suitability}
               </div>
@@ -60,7 +59,7 @@ const ProductDetail = () => {
             </div>
           </div>
           {/* <div className="ml-5">(review)</div> */}
-          <div className="mt-6">
+          <div className="mt-6 lg:text-lg">
             Members can return in-store for credit
             <button className="cursor-pointer underline ml-3">Join Now</button>
           </div>
@@ -73,7 +72,7 @@ const ProductDetail = () => {
             >
               <Minus className="w-5" />
             </button>
-            <span className="font-bold">{count}</span>
+            <span className="font-bold lg:text-xl">{count}</span>
             <button
               className="bg-gray-200 w-10 h-10 flex justify-center items-center hover:bg-gray-300"
               onClick={handleIncrement}
@@ -93,12 +92,12 @@ const ProductDetail = () => {
 
           {/* delivery option */}
           <div>
-            <div className="flex mt-10">
+            <div className="flex mt-10 lg:text-xl">
               <div className="font-semibold mr-5">How to get it</div>
               <div className="text-red-800">Required</div>
             </div>
             {/* checked button */}
-            <div>
+            <div className="lg:text-lg">
               <div className="flex justify-between mt-5">
                 <div className="flex items-center">
                   <input
@@ -133,7 +132,7 @@ const ProductDetail = () => {
           </div>
 
           {/* cart button*/}
-          <button className="bg-emerald-700 rounded-sm text-white font-semibold w-full h-14 mt-20 mb-20 cursor-pointer">
+          <button className="bg-emerald-700 rounded-sm text-white font-semibold w-full h-14 mt-20 mb-20 cursor-pointer lg:text-xl">
             ADD TO CART
             <span className="text-gray-300 ml-3">{productDetail?.price}</span>
           </button>

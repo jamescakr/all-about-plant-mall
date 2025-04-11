@@ -26,7 +26,7 @@
       "id": 2,
       "img": "https://res.cloudinary.com/bloomnation/c_pad%2Cd_vendor%3Aglobal%3Acatalog%3Aproduct%3Aimage.png%2Cf_auto%2Cfl_preserve_transparency%2Cq_auto/v1581043102/vendor/2932/catalog/product/2/0/20181128081621_file_5bfef795f08dd.jpg",
       "title": "Peace Lily",
-      "price": "$13",
+      "price": "$23",
       "difficulty": "Easy",
       "light": "☀️ Full Sun",
       "watering": "Weekly",
@@ -37,18 +37,18 @@
       "id": 3,
       "img": "https://greenripegarden.com/wp-content/uploads/2020/04/Aloe-Vera-Plant-2048x1365.jpg",
       "title": "Aloe Vera",
-      "price": "$28",
+      "price": "$18",
       "difficulty": "Easy",
       "light": "☀️ Full Sun",
       "watering": "Every 3 days",
       "suitability": "Indoor only",
-      "stock": 1
+      "stock": 4
     },
     {
       "id": 4,
       "img": "https://terragreenhouses.com/wp-content/uploads/2020/08/Fiddle-Leaf-Fig-10-Inch-Grower-Pot-scaled.jpg",
       "title": "Fiddle Leaf Fig",
-      "price": "$17",
+      "price": "$59",
       "difficulty": "Medium",
       "light": "☀️ Full Sun",
       "watering": "Every 3 days",
@@ -59,7 +59,7 @@
       "id": 5,
       "img": "https://flatwithplants.com/images/uploads/plants/_largeImage/133/rubber-plantJPG.jpg",
       "title": "Rubber Plant",
-      "price": "$17",
+      "price": "$55",
       "difficulty": "Easy",
       "light": "🌥️ Partial Shade",
       "watering": "Every 3 days",
@@ -70,7 +70,7 @@
       "id": 6,
       "img": "https://i.pinimg.com/originals/02/44/09/0244091b32b048107fb95e98793eb989.jpg",
       "title": "Monstera",
-      "price": "$11",
+      "price": "$33",
       "difficulty": "Easy",
       "light": "🌥️ Partial Shade",
       "watering": "Every 3 days",
@@ -81,12 +81,12 @@
       "id": 7,
       "img": "https://redsquareflowers.com/wp-content/uploads/2021/06/zz-plant-madison-wi-scaled-e1687315036116.jpg",
       "title": "ZZ Plant",
-      "price": "$10",
+      "price": "$29",
       "difficulty": "Medium",
       "light": "🌥️ Partial Shade",
       "watering": "Weekly",
       "suitability": "Indoor only",
-      "stock": 0
+      "stock": 3
     },
     {
       "id": 8,
@@ -97,7 +97,7 @@
       "light": "🌥️ Partial Shade",
       "watering": "Every 3 days",
       "suitability": "Indoor only",
-      "stock": 3
+      "stock": 5
     }
   ]
 }
