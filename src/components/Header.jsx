@@ -53,7 +53,12 @@ const Header = ({ authenticate, setAuthenticate }) => {
 
       <div className="flex">
         <div className="flex justify-start lg:justify-center ml-20">
-          <img src={logo} alt="logo" onClick={goToMain} className="w-50 h-25" />
+          <img
+            src={logo}
+            alt="logo"
+            onClick={goToMain}
+            className="w-50 h-25 mt-5 ml-15"
+          />
         </div>
 
         <div className="hidden flex-1 lg:flex justify-center items-center mr-20">
@@ -66,7 +71,7 @@ const Header = ({ authenticate, setAuthenticate }) => {
           </nav>
         </div>
       </div>
-      <div className=" flex lg:hidden flex-1 justify-center items-center mr-20">
+      <div className="flex lg:hidden flex-1 justify-center items-center mt-5">
         <nav>
           <ul className="flex gap-x-5 text-base sm:text-2xl list-none cursor-pointer">
             {menuList.map((item, index) => (
