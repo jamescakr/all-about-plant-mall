@@ -16,16 +16,25 @@ const Header = ({ authenticate, setAuthenticate }) => {
     navigate("/");
   };
 
+  const search = (event) => {
+    if (event.key === "Enter") {
+      let keyword = event.target.value;
+      navigate(`/?q=${keyword}`);
+    }
+  };
+
   return (
     <header>
       <div className="flex justify-end">
-        <form className="flex items-center" role="search">
+        <div className="flex items-center" role="search">
           <Search className="w-6 h-6 sm:w-8 sm:h-8 text-green-700" />
           <input
+            type="text"
             className="border-b-2 border-green-700 w-30 h-10 pl-2 focus:outline-none"
             placeholder="Search plants"
+            onKeyDown={(event) => search(event)}
           />
-        </form>
+        </div>
         <div
           className="flex items-center p-8 text-base sm:text-xl text-gray-700 cursor-pointer"
           onClick={() => {

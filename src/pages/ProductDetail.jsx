@@ -9,8 +9,8 @@ const ProductDetail = () => {
   const [count, setCount] = useState(1);
 
   const getProductDetail = async () => {
-    // let url = `http://localhost:4000/products/${id}`;
-    let url = `https://my-json-server.typicode.com/jamescakr/all-about-plant-mall/products/${id}`;
+    let url = `http://localhost:4000/products/${id}`;
+    // let url = `https://my-json-server.typicode.com/jamescakr/all-about-plant-mall/products/${id}`;
     let response = await fetch(url);
     let data = await response.json();
     setProductDetail(data);
@@ -114,8 +114,8 @@ const ProductDetail = () => {
                 </button>
               </div>
               <div className="border-b border-gray-300 mt-5"></div>
-              <div>
-                <div className="flex mt-5">
+              <div className="">
+                <div className="flex items-center mt-5">
                   <input
                     type="radio"
                     name="deliveryOption"
@@ -124,8 +124,10 @@ const ProductDetail = () => {
                   />
                   <div>Store pickup</div>
                 </div>
-                <div>All About Plant INC</div>
-                <div>1023 Coach Hill Rd SW, Calgary, AB</div>
+                <div className="flex flex-col items-end">
+                  <div>All About Plant INC</div>
+                  <div>1023 Coach Hill Rd SW, Calgary, AB</div>
+                </div>
               </div>
             </div>
           </div>
