@@ -24,7 +24,7 @@ const Signin = ({ setAuthenticate }) => {
           onSubmit={(event) => userSignin(event)}
           className="order-2 lg:order-1 lg:col-span-1 flex flex-col justify-center items-center h-screen "
         >
-          <div>
+          <div className="w-80 mx-auto">
             <div className="flex justify-center mb-10">
               <img
                 src={logo}
@@ -102,7 +102,7 @@ const Signin = ({ setAuthenticate }) => {
         </form>
 
         {/* image */}
-        <div className="relative order-1 lg:order-2 h-screen lg:col-span-1 flex items-center justify-center ">
+        <div className="relative order-1 lg:order-2 h-auto lg:h-screen lg:col-span-1 flex items-center justify-center ">
           <img
             src={signinImage2}
             className="rounded-sm md:w-[80%] md:h-auto lg:w-[100%] lg:h-auto"
