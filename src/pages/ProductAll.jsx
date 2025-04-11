@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ProductCard from "../components/ProductCard";
 import { useSearchParams } from "react-router-dom";
+import mainBg from "../assets/mainBg.webp";
 
 const ProductAll = () => {
   const [productList, setProductList] = useState([]);
@@ -23,6 +24,9 @@ const ProductAll = () => {
 
   return (
     <div>
+      <div className="mt-15 mb-20 hidden sm:block">
+        <img src={mainBg} className="w-screen" />
+      </div>
       <div>
         <ProductCard productList={productList} />
       </div>

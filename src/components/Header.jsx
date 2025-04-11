@@ -25,12 +25,12 @@ const Header = ({ authenticate, setAuthenticate }) => {
 
   return (
     <header>
-      <div className="flex justify-end">
+      <div className="flex justify-end items-center h-15">
         <div className="flex items-center" role="search">
           <Search className="w-6 h-6 sm:w-8 sm:h-8 text-green-700" />
           <input
             type="text"
-            className="border-b-2 border-green-700 w-30 h-10 pl-2 focus:outline-none"
+            className="border-b-2 border-green-700 w-50 h-10 pl-2 focus:outline-none"
             placeholder="Search plants"
             onKeyDown={(event) => search(event)}
           />
@@ -51,16 +51,22 @@ const Header = ({ authenticate, setAuthenticate }) => {
         </div>
       </div>
 
-      <div className="flex justify-center">
-        <img
-          src={logo}
-          alt="logo"
-          onClick={goToMain}
-          className="w-50 h-auto sm:w-80"
-        />
-      </div>
+      <div className="flex">
+        <div className="flex justify-start lg:justify-center ml-20">
+          <img src={logo} alt="logo" onClick={goToMain} className="w-50 h-25" />
+        </div>
 
-      <div className="flex justify-center mt-10">
+        <div className="hidden flex-1 lg:flex justify-center items-center mr-20">
+          <nav>
+            <ul className="flex gap-x-5 text-base sm:text-2xl list-none cursor-pointer">
+              {menuList.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div className=" flex lg:hidden flex-1 justify-center items-center mr-20">
         <nav>
           <ul className="flex gap-x-5 text-base sm:text-2xl list-none cursor-pointer">
             {menuList.map((item, index) => (

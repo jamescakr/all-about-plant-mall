@@ -1,6 +1,6 @@
 import React from "react";
 import googleLogo from "../assets/googleLogo.svg";
-import signinImage2 from "../assets/signinImage2.jpg";
+import signinImage2 from "../assets/signinImage2.webp";
 import logo from "../assets/logo.png";
 import { useNavigate } from "react-router-dom";
 
