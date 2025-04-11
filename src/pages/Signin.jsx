@@ -29,7 +29,7 @@ const Signin = ({ setAuthenticate }) => {
               <img
                 src={logo}
                 className="w-[50%] h-auto cursor-pointer"
-                onClick={goToMain()}
+                onClick={goToMain}
               />
             </div>
 
